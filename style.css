@@ -6,13 +6,13 @@ body {
     display: flex;
     flex-direction: column; /* Alinha os elementos verticalmente */
     align-items: center; 
-    justify-content: center;
+    justify-content: top;
 }
 
 /* Barra verde no topo */
 .barra-verde {
     background-color: #4F6443;
-    height: 20px;
+    height: 15px;
     width: 800px; /* Mesma largura do slider */
 }
 
@@ -30,6 +30,7 @@ body {
     height: 20px; /* Altura da barra */
     background-color: #4f6443; /* Cor da barra */
     margin-top: -45px; /* Posiciona a barra imediatamente abaixo do slider */
+    z-index: 99;
 }
 
 /* Estilos dos slides */
@@ -163,4 +164,51 @@ body {
 
 #radio8:checked ~ .navigation-auto .auto-btn8 {
     background-color: #FFF;
+}
+
+/* Contêiner para a imagem e o texto */
+.imagem-rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+/* Barra de e-mail */
+.email-bar {
+    display: flex;
+    margin-top: -440px;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ajuste da largura da barra */
+    z-index: 3; /* Sobrepõe a imagem */
+    top: -100px; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centralização */
+    padding: 10px;
+    border-radius: 5.5rem;
+}
+
+.email-input {
+    width:40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5.5rem;
+    font-size: 12px;
+    outline: none;
+    z-index: 2;
+}
+
+.email-button {
+    padding: 10px 20px;
+    background-color: #4f6443;
+    color: #CBBA9E;
+    border: none;
+    border-radius: 5.5rem;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.email-button:hover {
+    background-color: #3b4c31;
 }
