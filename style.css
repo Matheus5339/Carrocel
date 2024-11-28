@@ -7,6 +7,7 @@ body {
     flex-direction: column; /* Alinha os elementos verticalmente */
     align-items: center; 
     justify-content: top;
+    background-color: #CBBA9E;
 }
 
 /* Barra verde no topo */
@@ -29,8 +30,7 @@ body {
     width: 800px; /* Mesma largura do slider */
     height: 20px; /* Altura da barra */
     background-color: #4f6443; /* Cor da barra */
-    margin-top: -45px; /* Posiciona a barra imediatamente abaixo do slider */
-    z-index: 99;
+    margin-top: -60%; /* Posiciona a barra imediatamente abaixo do slider */
 }
 
 /* Estilos dos slides */
@@ -172,6 +172,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 800px;
+    margin-top: -13px; /* Ajuste o valor conforme necessário */
 }
 
 /* Barra de e-mail */
@@ -245,7 +246,7 @@ body {
 /* Imagem sobre o retângulo */
 .vector-image {
     position: absolute; /* Posiciona a imagem em relação ao contêiner pai */
-    top: 23%; /* Centraliza verticalmente */
+    top: 65%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta o centro da imagem */
     z-index: 4; /* Garante que a imagem está acima de outros elementos */
@@ -257,14 +258,12 @@ body {
 
 /* Rodapé */
 .footer {
-    width: 100%;
-    text-align: center;
-    color: #d5c8a5; /* Cor do texto */
-    padding: 20px 10px;
-    font-family: "Poiret One"; /* Escolha de fonte */
-    font-size: 12px; /* Tamanho do texto */
-    line-height: 1.5; /* Altura da linha para espaçamento */
-    z-index: 3;
+    .barra-verde {
+        position: absolute; /* Fixa a barra em relação ao contêiner pai */
+        top: calc(100% - 20px); /* Alinha com o topo do retângulo */
+        left: 0;
+        width: 100%; /* Garante que ela ocupe toda a largura */
+    }
 }
 
 .footer-text {
