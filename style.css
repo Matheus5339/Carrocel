@@ -245,11 +245,11 @@ body {
 /* Imagem sobre o retângulo */
 .vector-image {
     position: absolute; /* Posiciona a imagem em relação ao contêiner pai */
-    top: 63%; /* Centraliza verticalmente */
+    top: 23%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta o centro da imagem */
     z-index: 4; /* Garante que a imagem está acima de outros elementos */
-    width: 5%; /* Ajuste o tamanho proporcional ao contêiner */
+    width: 10%; /* Ajuste o tamanho proporcional ao contêiner */
     height: auto; /* Mantém a proporção da imagem */
     pointer-events: none; /* Evita cliques na imagem */
 }
