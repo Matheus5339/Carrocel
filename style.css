@@ -180,8 +180,8 @@ body {
     margin-top: -440px;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ajuste da largura da barra */
-    z-index: 3; /* Sobrepõe a imagem */
+    width: 80%; /* Ajuste da largura da barra */
+    z-index: 2; /* Sobrepõe a imagem */
     top: -100px; /* Centraliza verticalmente */
     transform: translateY(-50%); /* Ajuste fino para centralização */
     padding: 10px;
@@ -211,4 +211,88 @@ body {
 
 .email-button:hover {
     background-color: #3b4c31;
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaçamento menor */
+    align-items: center;
+    max-width: 90%; /* Limita a largura máxima do menu para caber na página */
+    margin: 0 auto; /* Centraliza o menu horizontalmente */
+    position: absolute;
+    top: 480px; /* Ajusta a posição vertical */
+    z-index: 2; /* Sobrepõe a imagem */
+    color: #fff;
+    padding: 0 10px; /* Adiciona um pequeno espaçamento interno */
+    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura definida */
+}
+
+/* Links do menu */
+.menu-link {
+    font-family: "Poiret One"; /* Fonte do design */
+    font-size: 18px;
+    color: #d5c8a5; /* Cor do texto */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 80px; /* Espaçamento horizontal entre os links */
+}
+
+.menu-link:hover {
+    color: #ffffff; /* Cor ao passar o mouse */
+}
+
+/* Imagem sobre o retângulo */
+.vector-image {
+    position: absolute; /* Posiciona a imagem em relação ao contêiner pai */
+    top: 63%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o centro da imagem */
+    z-index: 4; /* Garante que a imagem está acima de outros elementos */
+    width: 5%; /* Ajuste o tamanho proporcional ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    pointer-events: none; /* Evita cliques na imagem */
+}
+
+
+/* Rodapé */
+.footer {
+    width: 100%;
+    text-align: center;
+    color: #d5c8a5; /* Cor do texto */
+    padding: 20px 10px;
+    font-family: "Poiret One"; /* Escolha de fonte */
+    font-size: 12px; /* Tamanho do texto */
+    line-height: 1.5; /* Altura da linha para espaçamento */
+    z-index: 3;
+}
+
+.footer-text {
+    margin: 5px 0;
+}
+/*Logo UCP*/
+.footer-logo {
+    margin-top: 20px;
+    width: 130px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    z-index: 4;
+}
+
+/* Contêiner do texto no retângulo */
+.footer-text-container {
+    position: relative; /* Alterado para 'relative' para alinhamento dentro do retângulo */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    color: #d5c8a5; /* Cor do texto */
+    font-family: "Poiret One"; /* Fonte */
+    font-size: 16px; /* Tamanho do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    width: 100%; /* Garante que ocupa toda a largura do retângulo */
+    padding: 20px 10px; /* Adiciona espaçamento interno */
+    padding-top: 150px; /* Ajuste o valor para adicionar espaço interno na parte superior */
+}
+
+
+/* Linhas individuais do rodapé */
+.footer-line {
+    margin: 5px 0; /* Espaçamento entre as linhas */
 }
